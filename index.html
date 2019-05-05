@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Koło-fortuny</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password">
+         
+        </div>
+        <div class="draw">
+            <div class="draw__info"></div>
+            <div class="circle">
+               <div class="circle__bankrut"><p class="circle__text">bankrut</p></div>
+               <div class="circle__400"><p class="circle__text">400</p></div>
+               <div class="circle__150"><p class="circle__text">150</p></div>
+               <div class="circle__350"><p class="circle__text">350</p></div>
+               <div class="circle__200"><p class="circle__text">200</p></div>
+               <div class="circle__500"><p class="circle__text">500</p></div>
+               <div class="circle__100"><p class="circle__text">100</p></div>
+               <div class="circle__200-2"><p class="circle__text">200</p></div>
+               <div class="circle__300"><p class="circle__text">300</p></div>
+               <div class="circle__150-2"><p class="circle__text">150</p></div>
+               <div class="circle__1000"><p class="circle__text">1000</p></div>
+               <div class="circle__bankrut-2"><p class="circle__text">bankrut</p></div>
+               <div class="circle__350-2"><p class="circle__text">350</p></div>
+               <div class="circle__stop"><p class="circle__text">stop</p></div>
+               <div class="circle__450"><p class="circle__text">450</p></div>
+               <div class="circle__250"><p class="circle__text">250</p></div>
+               <div class="circle__550"><p class="circle__text">550</p></div>
+               <div class="circle__400-2"><p class="circle__text">400</p></div>
+               <div class="circle__100-2"><p class="circle__text">100</p></div>
+               <div class="circle__250-2"><p class="circle__text">250</p></div>
+               <div class="circle__200-3"><p class="circle__text">200</p></div>
+               <div class="circle__300-2"><p class="circle__text">300</p></div>
+               <div class="circle__100-3"><p class="circle__text">100</p></div>
+               <div class="circle__1500"><p class="circle__text">1500</p></div>
+               
+            </div>
+        </div> 
+        <div class="controll">
+            <div class="controll__Game">
+                <input type="button" value="Nowa Gra" class="controll__Game-button">
+                <input type="button" value="Zakręć kołem" class="controll__Game-spin">
+                <input type="button" value="Info" class="controll__Game-info">
+
+            </div>
+            <div class="controll__guessLetter">
+                <input type="text" class="controll__guessLetter-text" disabled maxlength="1" minlength="1">
+                <input type="button" value="Podaj spółgłoske" class="controll__guessLetter-button">
+            </div>
+            <div class="controll__buyLetter">
+                <input type="text" class="controll__buyLetter-text" disabled maxlength="1" minlength="1">
+                <input type="button" value="Kup samogłoskę" class="controll__buyLetter-button">
+            </div>
+            <div class="controll__guessPassword">
+                <input type="text" class="controll__guessPassword-text" minlength="1" disabled>
+                <input type="button" value="Podaje haslo" class="controll__guessPassword-button">
+            </controll__guessPassword-buttondiv>
+        </div>
+        <div class="player">
+            <div class="player__1 active">
+                    <div class="player__1-table"></div>
+                <div class="player__1-points ">0</div>
+            </div>
+            <div class="player__2 ">
+                    <div class="player__2-table"></div>
+                    <div class="player__2-points">0</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

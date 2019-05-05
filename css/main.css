@@ -1,0 +1,400 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 800px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: radial-gradient(#042b04, white); }
+
+.container {
+  width: 100%;
+  min-height: 95%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem; overflow: scroll;}
+
+.password {
+  width: 100%;
+  height: 20%;
+  background-image: radial-gradient(brown, white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+  padding: 0 5%; }
+
+.letter__white, .letter__gray {
+  width: 4rem;
+  height: 6rem;
+  align-self: center;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 3px; }
+  .letter__white-letter, .letter__gray-letter {
+    font-size: 5rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #535151; }
+
+.letter__white {
+  background-color: #fff; }
+
+.letter__gray {
+  background-color: rgba(46, 44, 44, 0.651); }
+
+.round, .title {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #363535;
+  letter-spacing: .3rem;
+  padding-top: 1rem;
+  color: #022206;
+  font-weight: 700;
+  text-shadow: 1px 1px white; }
+
+.draw {
+  width: 100%;
+  height: 38%;
+  position: relative;
+  margin: auto; }
+  @media only screen and (max-height: 800px) {
+    .draw {
+      height: 30%; } }
+  .draw::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 4rem;
+    background-color: black;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+
+.circle {
+  width: 35rem;
+  height: 35rem;
+  background-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  margin: auto; }
+  .circle::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; }
+  @media only screen and (max-width: 800px) {
+    .circle {
+      width: calc(35rem*0.6);
+      height: calc(35rem*0.6); } }
+  @media only screen and (max-height: 800px) {
+    .circle {
+      width: calc(35rem*0.6);
+      height: calc(35rem*0.6); } }
+  .circle__bankrut, .circle__400, .circle__150, .circle__350, .circle__200, .circle__500, .circle__100, .circle__200-2, .circle__300, .circle__150-2, .circle__1000, .circle__bankrut-2, .circle__350-2, .circle__stop, .circle__450, .circle__250, .circle__550, .circle__400-2, .circle__100-2, .circle__200-3, .circle__300-2, .circle__1500, .circle__100-3, .circle__250-2 {
+    position: absolute;
+    width: 4.7rem;
+    height: 17.5rem;
+    transform: translate(-50%);
+    clip-path: polygon(52% 0, 100% 100%, 0 100%, 48% 0);
+    border-radius: .4rem; }
+    @media only screen and (max-width: 800px) {
+      .circle__bankrut, .circle__400, .circle__150, .circle__350, .circle__200, .circle__500, .circle__100, .circle__200-2, .circle__300, .circle__150-2, .circle__1000, .circle__bankrut-2, .circle__350-2, .circle__stop, .circle__450, .circle__250, .circle__550, .circle__400-2, .circle__100-2, .circle__200-3, .circle__300-2, .circle__1500, .circle__100-3, .circle__250-2 {
+        width: calc(4.57rem*0.6);
+        height: calc(17.5rem*0.6); } }
+    @media only screen and (max-height: 800px) {
+      .circle__bankrut, .circle__400, .circle__150, .circle__350, .circle__200, .circle__500, .circle__100, .circle__200-2, .circle__300, .circle__150-2, .circle__1000, .circle__bankrut-2, .circle__350-2, .circle__stop, .circle__450, .circle__250, .circle__550, .circle__400-2, .circle__100-2, .circle__200-3, .circle__300-2, .circle__1500, .circle__100-3, .circle__250-2 {
+        width: calc(4.57rem*0.6);
+        height: calc(17.5rem*0.6); } }
+  .circle__bankrut {
+    font-size: 1.2rem;
+    background-color: black;
+    top: 50%;
+    left: 50%; }
+  .circle__400 {
+    background-color: blueviolet;
+    top: 49.3%;
+    left: 36.8%;
+    transform: rotate(15.6deg); }
+  .circle__150 {
+    background-color: crimson;
+    top: 46.8%;
+    left: 30.8%;
+    transform: rotate(31deg); }
+  .circle__350 {
+    background-color: blue;
+    top: 42.8%;
+    left: 25.6%;
+    transform: rotate(46.5deg); }
+  .circle__200 {
+    background-color: blueviolet;
+    top: 37.7%;
+    left: 21.5%;
+    transform: rotate(61.8deg); }
+  .circle__100 {
+    background-color: blue;
+    top: 31.5%;
+    left: 19%;
+    transform: rotate(76.5deg); }
+  .circle__500 {
+    background-color: brown;
+    top: 25%;
+    left: 18.2%;
+    transform: rotate(90deg); }
+  .circle__200-2 {
+    background-color: blueviolet;
+    top: 18.8%;
+    left: 19%;
+    transform: rotate(104.8deg); }
+  .circle__300 {
+    background-color: violet;
+    top: 12.8%;
+    left: 21.5%;
+    transform: rotate(119.8deg); }
+  .circle__150-2 {
+    background-color: blue;
+    top: 8%;
+    left: 25%;
+    transform: rotate(135deg); }
+  .circle__1000 {
+    background-color: blueviolet;
+    top: 3.6%;
+    left: 30%;
+    transform: rotate(149.6deg); }
+  .circle__bankrut-2 {
+    font-size: 1.2rem;
+    background-color: brown;
+    top: 1%;
+    left: 36%;
+    transform: rotate(165deg); }
+  .circle__350-2 {
+    background-color: blue;
+    top: 0%;
+    left: 42.8%;
+    transform: rotate(180deg); }
+  .circle__stop {
+    background-color: brown;
+    top: .7%;
+    left: 49.5%;
+    transform: rotate(195deg); }
+  .circle__450 {
+    background-color: blueviolet;
+    top: 3.2%;
+    left: 56%;
+    transform: rotate(209.5deg); }
+  .circle__250 {
+    background-color: blue;
+    top: 7%;
+    left: 61%;
+    transform: rotate(225deg); }
+  .circle__550 {
+    background-color: greenyellow;
+    top: 12.8%;
+    left: 65%;
+    transform: rotate(240deg); }
+  .circle__400-2 {
+    background-color: blueviolet;
+    top: 18.8%;
+    left: 67.8%;
+    transform: rotate(255deg); }
+  .circle__100-2 {
+    background-color: blue;
+    top: 25%;
+    left: 68.5%;
+    transform: rotate(270deg); }
+  .circle__250-2 {
+    background-color: brown;
+    top: 31.5%;
+    left: 67.8%;
+    transform: rotate(285deg); }
+  .circle__200-3 {
+    background-color: burlywood;
+    top: 37.3%;
+    left: 65%;
+    transform: rotate(299.9deg); }
+  .circle__300-2 {
+    background-color: blueviolet;
+    top: 42.5%;
+    left: 61.4%;
+    transform: rotate(315deg); }
+  .circle__1500 {
+    background-color: blue;
+    top: 46.6%;
+    left: 56.3%;
+    transform: rotate(330deg); }
+  .circle__100-3 {
+    background-color: orange;
+    top: 49%;
+    left: 50%;
+    transform: rotate(-14.8deg); }
+
+.circle__text {
+  margin-top: 280%;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: .3rem;
+  transform: rotate(270deg);
+  text-transform: uppercase; }
+
+.draw__info {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  color: brown;
+  text-shadow: 1px 1px black; }
+
+.controll {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .controll__Game {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly; }
+    @media only screen and (max-height: 800px) {
+      .controll__Game {
+        padding: .5rem; } }
+    .controll__Game-button {
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 1rem;
+      background-color: brown;
+      border: none;
+      border-radius: 30%;
+      color: #fff;
+      margin: 1rem .2rem;
+      letter-spacing: .2rem; }
+      .controll__Game-button:focus, .controll__Game-button:active {
+        outline: none; }
+    .controll__Game-spin {
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 1rem;
+      background-color: brown;
+      border: none;
+      border-radius: 30%;
+      color: #fff;
+      margin: 1rem .2rem;
+      letter-spacing: .2rem; }
+      .controll__Game-spin:focus, .controll__Game-spin:active {
+        outline: none; }
+    .controll__Game-info {
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 1rem;
+      background-color: brown;
+      border: none;
+      border-radius: 30%;
+      color: #fff;
+      margin: 1rem .2rem;
+      letter-spacing: .2rem; }
+      .controll__Game-info:focus, .controll__Game-info:active {
+        outline: none; }
+  .controll__guessLetter-text {
+    width: 5rem;
+    font-size: 2rem;
+    border: 1px solid brown;
+    border-radius: 1rem; }
+  .controll__guessLetter-button {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: brown;
+    border: none;
+    border-radius: 30%;
+    color: #fff;
+    margin: 1rem .2rem;
+    letter-spacing: .2rem; }
+    .controll__guessLetter-button:focus, .controll__guessLetter-button:active {
+      outline: none; }
+  .controll__buyLetter-text {
+    width: 5rem;
+    font-size: 2rem;
+    border: 1px solid brown;
+    border-radius: 1rem; }
+  .controll__buyLetter-button {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: brown;
+    border: none;
+    border-radius: 30%;
+    color: #fff;
+    margin: 1rem .2rem;
+    letter-spacing: .2rem; }
+    .controll__buyLetter-button:focus, .controll__buyLetter-button:active {
+      outline: none; }
+  .controll__guessPassword-text {
+    width: 45rem;
+    font-size: 2rem;
+    border: 1px solid brown;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 500px) {
+      .controll__guessPassword-text {
+        width: 100%;
+        text-align: center; } }
+  .controll__guessPassword-button {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: brown;
+    border: none;
+    border-radius: 30%;
+    color: #fff;
+    margin: 1rem .2rem;
+    letter-spacing: .2rem; }
+    .controll__guessPassword-button:focus, .controll__guessPassword-button:active {
+      outline: none; }
+    @media only screen and (max-width: 500px) {
+      .controll__guessPassword-button {
+        width: 100%;
+        text-align: center; } }
+
+.active {
+  background-image: radial-gradient(brown, white);
+  text-shadow: 1px 1px #e4e69f; }
+
+.player {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 1rem; }
+  .player__1 {
+    width: 40%; }
+  .player__2 {
+    width: 40%; }
+  .player__1-table, .player__2-table {
+    width: 80%;
+    height: 5px;
+    background-color: gray;
+    margin: 1rem auto;
+    border: .5px solid black; }
